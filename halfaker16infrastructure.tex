@@ -1,0 +1,158 @@
+\documentclass{sigchi-ext}
+% Please be sure that you have the dependencies (i.e., additional
+% LaTeX packages) to compile this example.
+\usepackage[T1]{fontenc}
+\usepackage{textcomp}
+\usepackage[scaled=.92]{helvet} % for proper fonts
+\usepackage{graphicx} % for EPS use the graphics package instead
+\usepackage{balance}  % for useful for balancing the last columns
+\usepackage{booktabs} % for pretty table rules
+\usepackage{ccicons}  % for Creative Commons citation icons
+\usepackage{ragged2e} % for tighter hyphenation
+
+% Some optional stuff you might like/need.
+% \usepackage{marginnote}
+% \usepackage[shortlabels]{enumitem}
+% \usepackage{paralist}
+% \usepackage[utf8]{inputenc} % for a UTF8 editor only
+
+%% EXAMPLE BEGIN -- HOW TO OVERRIDE THE DEFAULT COPYRIGHT STRIP --
+% \copyrightinfo{Permission to make digital or hard copies of all or
+% part of this work for personal or classroom use is granted without
+% fee provided that copies are not made or distributed for profit or
+% commercial advantage and that copies bear this notice and the full
+% citation on the first page. Copyrights for components of this work
+% owned by others than ACM must be honored. Abstracting with credit is
+% permitted. To copy otherwise, or republish, to post on servers or to
+% redistribute to lists, requires prior specific permission and/or a
+% fee. Request permissions from permissions@acm.org.\\
+% {\emph{CHI'14}}, April 26--May 1, 2014, Toronto, Canada. \\
+% Copyright \copyright~2014 ACM ISBN/14/04...\$15.00. \\
+% DOI string from ACM form confirmation}
+%% EXAMPLE END
+
+% Paper metadata (use plain text, for PDF inclusion and later
+% re-using, if desired).  Use \emtpyauthor when submitting for review
+% so you remain anonymous.
+\def\plaintitle{Breaking into new Data-Spaces: Infrastructure for Open Community Science}
+\def\plainauthor{Aaron Halfaker, Jonathan Morgan, Yuvaraj Pandian, Elizabeth Thiry}
+\def\emptyauthor{William Rand, Kristen Schuster, A.J. Million, Sean Goggins, David Laniado}
+\def\plainkeywords{Open Collaboration Data Factories; Infrastructure; Methods; Policy; Online communities; Scientific practice}
+\def\plaingeneralterms{Documentation, Standardization}
+
+\title{Breaking into new Data-Spaces: Infrastructure for Open Community Science}
+
+\numberofauthors{9}
+% Notice how author names are alternately typesetted to appear ordered
+% in 2-column format; i.e., the first 4 autors on the first column and
+% the other 4 auhors on the second column. Actually, it's up to you to
+% strictly adhere to this author notation.
+\author{%
+  \alignauthor{%
+    \textbf{Aaron Halfaker}\\
+    \email{ahalfaker@wikimedia.org} \\
+    \textbf{Jonathan Morgan}\\
+    \email{jmorgan@wikimedia.org} \\
+    \textbf{Yuvaraj Pandian}\\
+    \email{ypandian@wikimedia.org} \\
+    \affaddr{Wikimedia Research} }\alignauthor{%
+    \textbf{Kristen Schuster}\\
+    \email{schuster.kristen@gmail.com} \\
+    \textbf{A.J. Million}\\
+    \email{ajmillion@gmail.com} \\
+    \textbf{Sean Goggins}\\
+    \email{GogginsS@missouri.edu} \\
+    \affaddr{University of Missouri} } \vfil \alignauthor{%
+    \textbf{Elizabeth Thiry}\\
+    \affaddr{Boundless}\\
+    \email{thirystheory@gmail.com } }\alignauthor{%
+    \textbf{David Laniado}\\
+    \affaddr{Digital Humanity}\\
+    \affaddr{Eurecat}\\
+    \email{david.laniado@gmail.com } } \vfil \alignauthor{%
+    \textbf{William Rand}\\
+    \affaddr{Robert H. Smith School of Business}\\
+    \affaddr{University of Maryland}\\
+    \email{wrand@umd.edu} }
+}
+
+% Make sure hyperref comes last of your loaded packages, to give it a
+% fighting chance of not being over-written, since its job is to
+% redefine many LaTeX commands.
+\definecolor{linkColor}{RGB}{6,125,233}
+\hypersetup{%
+  pdftitle={\plaintitle},
+%  pdfauthor={\plainauthor},
+  pdfauthor={\emptyauthor},
+  pdfkeywords={\plainkeywords},
+  bookmarksnumbered,
+  pdfstartview={FitH},
+  colorlinks,
+  citecolor=black,
+  filecolor=black,
+  linkcolor=black,
+  urlcolor=linkColor,
+  breaklinks=true,
+}
+
+% \reversemarginpar%
+
+\begin{document}
+
+\maketitle
+
+% Uncomment to disable hyphenation (not recommended)
+% https://twitter.com/anjirokhan/status/546046683331973120
+\RaggedRight{}
+
+% Do not change the page size or page settings.
+\begin{abstract}
+\input{sections/abstract}
+\end{abstract}
+
+\keywords{\plainkeywords}
+
+\category{H.3.5}{Online Information Services}{Data sharing}
+\category{H.3.4}{Systems and Software}{Information networks}
+
+\section{Introduction}
+\input{sections/introduction}
+
+\section{Using open online data}
+\input{sections/using}
+
+\subsection{Methods replication}
+\input{sections/using.methods_replication}
+
+\subsection{Technical literacy}
+\input{sections/using.technical_literacy}
+
+\subsection{Metadata and taxonomies}
+\input{sections/using.metadata_taxonomies}
+
+\section{Workshop plan}
+\input{sections/plan}
+
+\subsection{Participation}
+\input{sections/plan.participation}
+
+\subsection{Workshop preparation}
+\input{sections/plan.preparation}
+
+\subsection{Workshop day}
+\input{sections/plan.day}
+
+\subsection{Summary reporting}
+\input{sections/plan.reporting}
+
+\balance{}
+
+\bibliographystyle{SIGCHI-Reference-Format}
+\bibliography{refs}
+
+\end{document}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:
